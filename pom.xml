@@ -2,7 +2,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
+    <!-- ✅ Spring Boot Parent -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version> <!-- You can change this to the version you prefer -->
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <groupId>com.example</groupId>
     <artifactId>calculator</artifactId>
     <version>1.0.0</version>
@@ -10,7 +18,7 @@
 
     <name>Calculator</name>
     <description>Simple Calculator API with Spring Boot</description>
-    
+
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -35,3 +43,4 @@
         </plugins>
     </build>
 </project>
+
